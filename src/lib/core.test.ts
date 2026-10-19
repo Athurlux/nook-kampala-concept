@@ -4,7 +4,7 @@ import { applyFilters, parseFilters, serializeFilters, EMPTY_FILTERS } from './f
 import { createCollectionStore, readCollection, STORAGE_KEY, MAX_COMPARE } from './collection'
 import { guestErrors, isBlackedOut, nightsBetween, quoteStay, stayDateErrors, firstAvailableStart } from './stay'
 import { addDays } from './validation'
-import { bookingFlow } from '../forms/flows'
+import { bookingFlow, type BookingDraft } from '../forms/flows'
 import { firstIncompleteIndex, reviewSections, validateStage } from '../forms/engine'
 import { resolveStep, DONE, REVIEW } from '../forms/useFormFlow'
 
@@ -162,7 +162,7 @@ describe('booking flow', () => {
   })
 
   it('offers sample data that is itself valid', () => {
-    const sampled = { ...flow.empty(), ...flow.sample(TODAY) }
+    const sampled = { ...flow.empty(), ...flow.sample(TODAY) } as BookingDraft
     expect(firstIncompleteIndex(flow, sampled, NOW)).toBe(flow.stages.length)
   })
 })
