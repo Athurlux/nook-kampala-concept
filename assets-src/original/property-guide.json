@@ -1,0 +1,146 @@
+[
+  {
+    "id": "kasiri",
+    "name": "Kasiri Residences",
+    "neighbourhood": "Kisaasi",
+    "status": "fictional demonstration property",
+    "design_direction": "comfortable compact contemporary Kampala apartment, three-storey cream plaster building, charcoal metal balcony rails, warm oak interiors, sage-green upholstery, modest bright rooms, practical rather than luxury",
+    "gallery": [
+      "properties/kasiri/exterior.webp",
+      "properties/kasiri/living.webp",
+      "properties/kasiri/bedroom.webp",
+      "properties/kasiri/kitchen.webp",
+      "properties/kasiri/bathroom.webp"
+    ],
+    "illustrative_amenities": [
+      "Wi-Fi",
+      "Equipped kitchen",
+      "Workspace",
+      "Balcony",
+      "Parking"
+    ]
+  },
+  {
+    "id": "bukoto",
+    "name": "Bukoto Grove Apartments",
+    "neighbourhood": "Bukoto",
+    "status": "fictional demonstration property",
+    "design_direction": "stylish four-storey residential building with warm pale brick, vertical timber-look fins and generous balconies, light oak floors, olive boucle upholstery, warm ivory walls, clean contemporary design",
+    "gallery": [
+      "properties/bukoto/exterior.webp",
+      "properties/bukoto/living.webp",
+      "properties/bukoto/bedroom.webp",
+      "properties/bukoto/kitchen.webp",
+      "properties/bukoto/bathroom.webp",
+      "properties/bukoto/gym.webp"
+    ],
+    "illustrative_amenities": [
+      "Wi-Fi",
+      "Equipped kitchen",
+      "Gym (shared)",
+      "Lift",
+      "Laundry facilities",
+      "Balcony",
+      "Parking"
+    ]
+  },
+  {
+    "id": "kyanja",
+    "name": "Kyanja Heights",
+    "neighbourhood": "Kyanja",
+    "status": "fictional demonstration property",
+    "design_direction": "premium six-storey contemporary apartment building, white render and charcoal stone, glass balconies, lush courtyard, ivory travertine interiors, walnut cabinetry, muted teal velvet accents, refined luxury",
+    "gallery": [
+      "properties/kyanja/exterior.webp",
+      "properties/kyanja/living.webp",
+      "properties/kyanja/bedroom.webp",
+      "properties/kyanja/kitchen.webp",
+      "properties/kyanja/bathroom.webp",
+      "properties/kyanja/pool.webp"
+    ],
+    "illustrative_amenities": [
+      "Wi-Fi",
+      "Equipped kitchen",
+      "Pool (shared)",
+      "Gym (shared; not pictured)",
+      "Rooftop lounge (not pictured)",
+      "Air conditioning",
+      "Backup power"
+    ]
+  },
+  {
+    "id": "kololo",
+    "name": "Kololo Crest Suites",
+    "neighbourhood": "Kololo",
+    "status": "fictional demonstration property",
+    "design_direction": "high-end low-rise hillside serviced residence, limestone facade, bronze window frames and broad private terraces, warm ivory limestone interiors, smoked oak cabinetry, rust velvet accents, sophisticated understated luxury",
+    "gallery": [
+      "properties/kololo/exterior.webp",
+      "properties/kololo/living.webp",
+      "properties/kololo/bedroom.webp",
+      "properties/kololo/kitchen.webp",
+      "properties/kololo/bathroom.webp",
+      "properties/kololo/pool.webp",
+      "properties/kololo/gym.webp"
+    ],
+    "illustrative_amenities": [
+      "Wi-Fi",
+      "Equipped kitchen",
+      "Pool (shared)",
+      "Gym (shared)",
+      "Housekeeping",
+      "Concierge",
+      "Private terrace",
+      "Air conditioning"
+    ]
+  },
+  {
+    "id": "muyenga",
+    "name": "Muyenga Vista Residences",
+    "neighbourhood": "Muyenga",
+    "status": "fictional demonstration property",
+    "design_direction": "spacious family-oriented three-storey garden residence, pale sand plaster, timber balcony screens, terracotta planters and tropical gardens, honey oak interiors, cream linen seating, earthy terracotta accents, relaxed family luxury",
+    "gallery": [
+      "properties/muyenga/exterior.webp",
+      "properties/muyenga/living.webp",
+      "properties/muyenga/bedroom.webp",
+      "properties/muyenga/kitchen.webp",
+      "properties/muyenga/bathroom.webp",
+      "properties/muyenga/pool.webp"
+    ],
+    "illustrative_amenities": [
+      "Wi-Fi",
+      "Equipped kitchen",
+      "Pool (shared)",
+      "Gardens",
+      "Children’s play area (not pictured)",
+      "Parking",
+      "Family living space"
+    ]
+  },
+  {
+    "id": "naguru",
+    "name": "Naguru Terrace Apartments",
+    "neighbourhood": "Naguru",
+    "status": "fictional demonstration property",
+    "design_direction": "executive five-storey contemporary residence with off-white render, graphite vertical facade fins and deep terraces, ash wood interiors, slate-blue upholstery, charcoal fixtures, elegant practical executive design",
+    "gallery": [
+      "properties/naguru/exterior.webp",
+      "properties/naguru/living.webp",
+      "properties/naguru/bedroom.webp",
+      "properties/naguru/kitchen.webp",
+      "properties/naguru/bathroom.webp",
+      "properties/naguru/gym.webp"
+    ],
+    "illustrative_amenities": [
+      "Wi-Fi",
+      "Equipped kitchen",
+      "Gym (shared)",
+      "Pool (shared; not pictured)",
+      "Coworking lounge (not pictured)",
+      "Lift",
+      "Backup power",
+      "Terrace"
+    ]
+  }
+]

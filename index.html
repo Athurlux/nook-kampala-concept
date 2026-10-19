@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-UG">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nook Kampala · Apartments &amp; stays across Kampala</title>
+    <meta name="description" content="Find your place in Kampala. An independent apartment discovery and booking concept: six fictional homes, galleries, saved stays, comparison and demonstration booking and viewing journeys. All properties and prices are illustrative." />
+    <meta name="theme-color" content="#F4EFE5" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nook Kampala — independent concept" />
+    <meta property="og:title" content="Nook Kampala — Find your place in Kampala" />
+    <meta property="og:description" content="An independent apartment discovery and booking concept. Six fictional homes; all properties, prices and availability are illustrative." />
+    <meta property="og:url" content="%VITE_SITE_URL%/" />
+    <meta property="og:image" content="%VITE_SITE_URL%/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Nook Kampala logo and the headline Find your place in Kampala beside a sunlit living room, labelled independent concept" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <script>
+      // Hide hero layers until the entrance timeline takes over; the timer reveals
+      // everything if animation never starts. Search and navigation are never hidden.
+      if (!matchMedia('(prefers-reduced-motion: reduce)').matches && location.pathname === '/') {
+        document.documentElement.classList.add('hero-pending')
+        setTimeout(function () { document.documentElement.classList.remove('hero-pending') }, 2500)
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript><p style="padding:24px;font-family:sans-serif">Nook Kampala is an interactive concept and needs JavaScript for its pages and demonstration journeys.</p></noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

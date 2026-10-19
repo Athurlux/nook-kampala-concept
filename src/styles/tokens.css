@@ -1,0 +1,59 @@
+:root {
+  /* Nook palette — limestone cream, deep olive, charcoal, restrained terracotta */
+  --cream: #f4efe5;
+  --cream-deep: #ebe3d4;
+  --cream-line: #dcd2c0;
+  --paper: #faf7f1;
+  --olive: #343e32;
+  --olive-deep: #262e25;
+  --olive-soft: #4b5848;
+  --olive-tint: #e3e6dc;
+  --sage: #a9b39c;           /* decorative on olive */
+  --charcoal: #242722;
+  --ink-soft: #5b5f55;       /* secondary text on cream, 6.1:1 */
+  --terracotta: #b86848;     /* decorative: rules, marks, large display, fills behind cream text at 18px+ bold */
+  --terracotta-text: #8e4529;/* terracotta for small text on cream, 6:1 */
+  --terracotta-light: #e3a383; /* terracotta on olive */
+
+  --success: #3e6a3b;
+  --danger: #a02c1c;
+  --danger-bg: #f9e9e4;
+
+  --font-display: 'Instrument Serif', 'Iowan Old Style', Georgia, serif;
+  --font-body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --text-xs: 0.8125rem;
+  --text-sm: 0.9375rem;
+  --text-base: 1.0625rem;
+  --text-lg: 1.1875rem;
+  --text-xl: clamp(1.6rem, 1.3rem + 1vw, 2.1rem);
+  --text-2xl: clamp(2.1rem, 1.6rem + 2vw, 3.2rem);
+  --text-3xl: clamp(2.7rem, 1.8rem + 3.6vw, 4.8rem);
+  --text-hero: clamp(3.1rem, 1.6rem + 6.2vw, 7.4rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --space-9: clamp(4.5rem, 3rem + 6vw, 8.5rem);
+
+  --radius-xs: 3px;
+  --radius: 6px;
+  --radius-lg: 12px;
+  --arch: 999px 999px 0 0;
+  --shadow-sm: 0 1px 2px rgba(36, 39, 34, 0.06), 0 6px 18px rgba(36, 39, 34, 0.05);
+  --shadow: 0 24px 50px -28px rgba(36, 39, 34, 0.45);
+
+  --container: 1280px;
+  --gutter: clamp(16px, 4vw, 48px);
+  --header-h: 76px;
+  --focus: 0 0 0 3px var(--paper), 0 0 0 5px var(--olive);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (max-width: 699px) {
+  :root { --header-h: 64px; }
+}

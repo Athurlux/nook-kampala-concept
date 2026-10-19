@@ -1,0 +1,63 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--header-h) + 20px); }
+@media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  /* Clip on body, never html: on the root it disables programmatic scrolling in Chromium. */
+  overflow-x: clip;
+}
+
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+h1, h2, h3, h4 { margin: 0; line-height: 1.1; font-weight: 400; }
+p, ul, ol, dl, figure { margin: 0; }
+ul[class], ol[class] { list-style: none; padding: 0; }
+dd { margin: 0; }
+button, input, select, textarea { font: inherit; color: inherit; }
+button { cursor: pointer; }
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+code { font-size: 0.9em; background: var(--cream-deep); padding: 1px 5px; border-radius: 3px; }
+
+:focus-visible { outline: none; box-shadow: var(--focus); border-radius: 4px; }
+[tabindex='-1']:focus { outline: none; box-shadow: none; }
+::selection { background: var(--olive); color: var(--cream); }
+
+.container { width: 100%; max-width: calc(var(--container) + var(--gutter) * 2); margin-inline: auto; padding-inline: var(--gutter); }
+
+.visually-hidden {
+  position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+.skip-link {
+  position: absolute; left: 16px; top: -60px; z-index: 200;
+  background: var(--olive); color: var(--cream); padding: 12px 18px; border-radius: var(--radius);
+  font-weight: 700; text-decoration: none; transition: top 0.2s;
+}
+.skip-link:focus { top: 12px; }
+
+main { display: block; min-height: 60vh; }
+main:focus { outline: none; }
+.route-loading { min-height: 70vh; }
+
+/* Hero layers wait for the entrance; index.html's timer removes this if motion never
+   starts. The search panel and navigation are never hidden. */
+.hero-pending [data-hero='line'] { transform: translateY(108%); }
+.hero-pending [data-hero='eyebrow'], .hero-pending [data-hero='lede'], .hero-pending [data-hero='explore'] { opacity: 0; }
+.hero-pending [data-hero='mask'] { transform: scaleY(1); }
+
+@media print {
+  .site-header, .site-footer, .skip-link, .no-print, .compare-tray, .toast, .mobile-cta { display: none !important; }
+  body { background: #fff; }
+  .confirmation__layout { display: block !important; }
+  .price-summary { border: 1px solid #999; margin-top: 16px; }
+}
